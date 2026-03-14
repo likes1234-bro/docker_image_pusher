@@ -78,3 +78,41 @@ xiaoyaliu/alist
 修改/.github/workflows/docker.yaml文件
 添加 schedule即可定时执行(此处cron使用UTC时区)
 ![](doc/定时执行.png)
+
+## 测试镜像
+
+### 快速测试
+
+**Linux/Mac 用户**：
+```bash
+# 下载并运行测试脚本
+chmod +x test-images.sh
+./test-images.sh
+```
+
+**Windows 用户**：
+```cmd
+# 双击运行或在命令行执行
+test-images.bat
+```
+
+### 详细测试指南
+
+查看 [TEST_GUIDE.md](TEST_GUIDE.md) 获取完整的测试步骤和故障排查指南。
+
+### 使用转存的镜像
+
+查看 [USAGE.md](USAGE.md) 了解如何在你的项目中使用这些镜像。
+
+## 已转存的镜像
+
+本仓库已为 SkillHub 项目转存以下镜像：
+
+- postgres:16-alpine
+- redis:7-alpine
+- minio/minio:latest
+- prom/prometheus:latest
+- grafana/grafana:latest
+- nginx:alpine
+- ghcr.io/iflytek/skillhub-server:edge
+- ghcr.io/iflytek/skillhub-web:edge
